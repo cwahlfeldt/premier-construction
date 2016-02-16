@@ -1,0 +1,13 @@
+{
+  "name": "premier-construction",
+  "version": "1.0.0",
+  "description": "Construction website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node-sass --output-style compressed ./assets/scss/main.scss ./assets/css/main.css",
+    "watch": "watch 'npm run build' ./assets/scss/",
+    "build-watch": "npm run build && npm run watch & serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

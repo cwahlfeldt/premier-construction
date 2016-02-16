@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$navbar-default-bg: rgba(182, 61, 50, 1);
+$navbar-default-link-color: white;
+$deep-red: #3C1D17;
+
+html {
+  background-color: $deep-red;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 300;
+}
+
+a.home-link {
+    color: #428BCA;
+    text-decoration: none;
+}
+
+a.home-link:hover, a.home-link:focus {
+    color: #2A6496;
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.correct-positioning {
+  margin-top: 105px !important;
+}
+
+.correct-positioning-other {
+  margin-top: 70px !important;
+}
+
+.page-header {
+  color: $navbar-default-bg;
+  font-weight: bold;
+}
+
+.navbar {
+  border-radius: 0px !important;
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+    a {
+      font-size: 1.6rem;
+      padding: 10px 35px;
+      padding-top: 15px;
+    }
+  }
+}
+
+.navbar-default {
+  border-color: transparent;
+}
+
+.logo-banner {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/banner.jpg");
+  /* background-attachment: fixed; */
+
+  .logo {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .logo-img {
+    width: 109px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+.about-page-content {
+  p.about-text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .about-img {
+    padding: 2px;
+  }
+}
+
+.blurb {
+  /* padding: 100px 0; */
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  h1,
+  h2 {
+    font-weight: bold;
+  }
+
+  h1 {
+    color: $navbar-default-bg;
+  }
+
+  h2 {
+    margin-top: 40px;
+    color: $deep-red;
+  }
+
+  p.intro {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  p.services {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  span.special-slash {
+    color: $navbar-default-bg;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 970px;
+    }
+  }
+}
+
+.front-page-content {
+  /* padding: 100px 0; */
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+  h1,
+  h2 {
+    font-weight: bold;
+  }
+
+  h1 {
+    color: $navbar-default-bg;
+  }
+
+  h2 {
+    margin-top: 40px;
+    color: $deep-red;
+  }
+
+  p.intro {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  p.services {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  span.special-slash {
+    color: $navbar-default-bg;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 970px;
+    }
+  }
+}
+
+.carousel {
+  .carousel-inner {
+    height: 400px;
+  }
+
+  img {
+    background-size: cover;
+  }
+
+  @media (max-width: 730px) {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: 100px;
+
+  .top-footer {
+    background-color: $deep-red;
+    color: white;
+    padding: 70px 0;
+    font-size: 30px;
+  }
+
+  .bottom-footer {
+    background-color: $navbar-default-bg;
+    color: white;
+    padding: 40px 0;
+    font-size: 18px;
+  }
+}
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
